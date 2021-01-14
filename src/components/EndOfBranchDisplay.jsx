@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useHistory } from 'react-router';
 import diffStyles from '../Learning Images/diff-learning-styles.jpg'
+import Confetti from 'react-confetti'
 
 export const EndOfBranchDisplay = ({results}) => {
 
@@ -36,6 +37,7 @@ export const EndOfBranchDisplay = ({results}) => {
    const history = useHistory()
     return (
     <section className='ending-results-section'>
+    <Confetti numberOfPieces={500} recycle={false}/>
           <section className='ending-results-section-header-top'>
              <h2>Congratulations!</h2>
             </section>
