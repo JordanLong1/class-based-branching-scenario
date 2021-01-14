@@ -104,7 +104,13 @@ a:hover {
 .image-section img {
   width: 60%;
   box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
-  margin: 5%
+  margin: 5%;
+  transition: 1s ease;
+}
+
+.image-section img:hover {
+  border-radius:50%;
+  transition: 1s ease;
 }
 
 
@@ -132,6 +138,7 @@ li:hover {
   color: black;
 }
 
+
 .ending-results-section-header-top {
   margin-top: 5%;
   margin-bottom: 5%;
@@ -150,7 +157,14 @@ li:hover {
   width: 65%;
   margin-bottom: 5%;
   box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
+  transition: 1s ease;
+}
 
+.ending-results-section-image-and-p-tags img:hover {
+  -webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
 }
 
 .ending-results-section-learning-display {
