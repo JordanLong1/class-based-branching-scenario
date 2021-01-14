@@ -7,7 +7,220 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* *** NAVBAR STYLING *** */
+
+.header {
+  width: 100%;
+  height: 60px;
+  border-bottom: solid;
+  background-color: black;
+  color: white;
 }
+
+.header-top_home-email-route {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-top_home-email-route h1:hover {
+ 
+  color: #03cffc;
+}
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #03cffc;
+} 
+
+.header-top_home-email-route span:hover {
+  cursor: pointer;
+  color: #03cffc;
+}
+
+
+.landing-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  background-image: url('https://ocpl.org/sites/ocpl/files/2020-08/a20.png');
+ 
+}
+
+
+.landing-page-container h1 {
+  margin: 0 auto;
+  color:black;
+}
+
+.landing-page-container button{
+  cursor: pointer;
+  height: 35px;
+  width: 10%;
+  background-color: white;
+  border: solid 2px black;
+}
+
+.landing-page-container button:hover {
+  background-color: black;
+  color: white;
+  border: solid 2px black;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.question-section {
+  margin-top: 2%;
+  width: 50%;
+  
+}
+
+.question-section h4{
+  height: 75px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.image-section img {
+  width: 60%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
+  margin: 5%
+}
+
+
+li {
+  margin: 0.1em;
+  padding: 1em;
+  list-style: none;
+  border: solid 1px black; 
+  cursor: pointer;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #03cffc; */
+  background-color: black;
+  color: white;
+}
+
+
+
+li:hover {
+  font-size: larger;
+  border: solid 2px black;
+    background-color: #03cffc;
+  color: black;
+}
+
+.ending-results-section-header-top {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.ending-results-section-image-and-p-tags {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.ending-results-section-image-and-p-tags img {
+  width: 65%;
+  margin-bottom: 5%;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
+
+}
+
+.ending-results-section-learning-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.ending-results-section-learning-display button {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 900px) {
+
+  .landing-page-container h1 {
+    text-align: center;
+  }
+
+  .landing-page-container button {
+    width: 30%;
+    background-color: black;
+    color: white;
+  }
+
+
+
+  .question-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .question-section h4 {
+    border: none;
+    text-align: center;
+  }
+
+  ul {
+    justify-content: center;
+    
+  }
+
+  li {
+    margin-right: 40px;
+  text-align: center;
+  }
+
+  .ending-results-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+}
+
