@@ -12,24 +12,24 @@ import readinImg from '../Learning Images/reading-img.png';
 import learningGif from '../Learning Images/learning.gif';
 import musicLearning from '../Learning Images/music-learning.png';
 import brainImg from '../Learning Images/brain-img.jpg';
-
+import garfield from '../Learning Images/garfield.jpg'
 export const questionsAndOptions = [
     {questionId: 1, 
         questionTitle: 'How do you think you learn best?', 
         questionImage: firstImage,
         options: [
             { 
-           optionTitle: 'Online learning', // almost finished need something for null.
+           optionTitle: 'Online learning', 
              pointsTo: 2, 
              typeOfAnswer: 'A'
             }, 
             {
-            optionTitle: 'In person / Face-face interaction', // done here for now. 
+            optionTitle: 'In person / Face-face interaction', 
             pointsTo: 3, 
             typeOfAnswer: 'B',             
             }, 
             {
-            optionTitle: 'Combination of both', // needs more
+            optionTitle: 'Combination of both', 
             pointsTo: 4, 
             typeOfAnswer: 'C'
             }
@@ -102,18 +102,18 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Watching a video explanation.',
-                pointsTo: 0,  // end
+                pointsTo: 0,  
                 typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Reading an article, blog, or book on the topic', 
-                pointsTo: 10, // end of branch
+                pointsTo: 10, 
                 typeOfAnswer: 'B'
             }, 
         ]
     }, 
     {
-        questionId: 6, // B points here.
+        questionId: 6, 
         questionTitle: 'You want to put together a new desk from Ikea, how would you approach the task?', 
         questionImage: jugglingSkills,
         options: [
@@ -136,17 +136,17 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Memorizing assignments, video lectures, watching and listening to the teacher give a lecture.',
-                pointsTo: 0, // end 
+                pointsTo: 0, 
                 typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Writing essays, book reports, written tests.', 
-                pointsTo: 14, // end
+                pointsTo: 14, 
                 typeOfAnswer: 'B'
             }, 
             {
                 optionTitle: 'A little bit of both.', 
-                pointsTo: 0, // end
+                pointsTo: 0, 
                 typeOfAnswer: 'C'
             }, 
         ]
@@ -159,12 +159,12 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Picture the numbers on your phone.',
-                pointsTo: 15,  // end 
+                pointsTo: 15,  
                 typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Write it down on a piece of paper. ', 
-                pointsTo: 0, // end
+                pointsTo: 0, 
                 typeOfAnswer: 'B'
             }, 
         ]
@@ -177,18 +177,18 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'Watching the actions',
-                pointsTo: 0 ,// end 
+                pointsTo: 0 ,
                 typeOfAnswer: 'A'
             }, 
             {
                 optionTitle: 'Reading the captions', 
-                pointsTo: 0, // end
+                pointsTo: 0, 
                 typeOfAnswer: 'B'
             }, 
 
             {
                 optionTitle: 'Seeing the diagrams.', 
-                pointsTo: 0,  // end
+                pointsTo: 0,  
                 typeOfAnswer: 'A'
             }, 
         ]
@@ -200,18 +200,18 @@ export const questionsAndOptions = [
         options: [
             {
                 optionTitle: 'The best and most relaxing thing ever.',
-                pointsTo: 0 ,// end 
+                pointsTo: 0 ,
                 typeOfAnswer: 'B'
             }, 
             {
                 optionTitle: `Takes too long; you'd rather watch a video`, 
-                pointsTo: 0, // end
+                pointsTo: 0, 
                 typeOfAnswer: 'C'
             }, 
 
             {
                 optionTitle: `You'd rather be outside working on something or doing something else.`, 
-                pointsTo: 0,  // end
+                pointsTo: 0,  
                 typeOfAnswer: 'C'
             }, 
         ]
@@ -219,6 +219,7 @@ export const questionsAndOptions = [
     {
         questionId: 11, 
         questionTitle: `When you see or hear the word "cat", what do you do?`, 
+        questionImage: garfield,
         options: [
             {
                 optionTitle: 'Picture a cat in your mind', 

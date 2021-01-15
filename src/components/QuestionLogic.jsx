@@ -3,12 +3,8 @@ import {questionsAndOptions} from '../QuestionBank/index';
 import { EndOfBranchDisplay } from './EndOfBranchDisplay';
 import QuestionPresentation from './QuestionPresentation'
 
-// export default function QuestionLogic() {
 class QuestionLogic extends React.Component {
 
-    // const [currentQuestion, setCurrentQuestion] = useState(questionsAndOptions[0]);
-    // const [endOfBranch, setEndOfBranch] = useState(false);
-    // const [results, setResults] = useState([]);
     constructor(props) {
         super(props) 
         this.state = {
@@ -20,8 +16,8 @@ class QuestionLogic extends React.Component {
     }
     
      handleClick = (event) => {
-        this.handleClickHelper(event); // this function was getting bulky, needed some abstraction
-        let pointsToValue = event.target.id; // this value dictates the next question. 
+        this.handleClickHelper(event);
+        let pointsToValue = event.target.id; 
         pointsToValue = parseInt(event.target.id, 10);
         let nextQuestion = questionsAndOptions.find(question => question.questionId === pointsToValue);
         pointsToValue !== 0 ?  this.setState({currentQuestion: nextQuestion}) : this.setState({endOfBranch: true});

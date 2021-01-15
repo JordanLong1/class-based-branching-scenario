@@ -1,8 +1,9 @@
 import React from 'react'; 
-import PropTypes from 'prop-types';
 import { useHistory } from 'react-router';
-import diffStyles from '../Learning Images/diff-learning-styles.jpg'
-import Confetti from 'react-confetti'
+
+import PropTypes from 'prop-types';
+import diffStyles from '../Learning Images/diff-learning-styles.jpg';
+import Confetti from 'react-confetti';
 
 export const EndOfBranchDisplay = ({results}) => {
 
@@ -30,14 +31,14 @@ export const EndOfBranchDisplay = ({results}) => {
        } else if (mostFrequent === 'B') {
            learningStyle = 'Kinesthetic';
        } else if (mostFrequent === 'C') {
-           learningStyle = 'Hybrid, a combination of both';
+           learningStyle = 'Hybrid, a combination of both visual and kinesthetic';
        };
 
     
    const history = useHistory()
     return (
     <section className='ending-results-section'>
-    <Confetti numberOfPieces={500} recycle={false}/>
+     <Confetti numberOfPieces={500} recycle={false}/>
           <section className='ending-results-section-header-top'>
              <h2>Congratulations!</h2>
             </section>
@@ -48,7 +49,7 @@ export const EndOfBranchDisplay = ({results}) => {
                     <p>These results are accumulated by which option you chose for each question.</p>
         </section>
         <section className='ending-results-section-learning-display'>
-            <p>It looks like you're a {learningStyle} learner!</p>
+            <p>It looks like you have a {learningStyle} learning style!</p>
             <button onClick={() => history.push('/')}>Go back home</button>
         </section>
     </section>
