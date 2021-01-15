@@ -40,10 +40,10 @@ class QuestionLogic extends React.Component {
 
     render() {
         return (
-            <div className='question-container'>
+            <section className='question-container'>
               <QuestionPresentation questionTitle={this.state.currentQuestion.questionTitle} questionImg={this.state.currentQuestion.questionImage} children={this.getOptionsIntoList} endOfBranch={this.state.endOfBranch}/>
                  {this.state.endOfBranch === true ? <EndOfBranchDisplay results={this.state.results} /> : null}
-            </div>
+            </section>
         );
     };
 };

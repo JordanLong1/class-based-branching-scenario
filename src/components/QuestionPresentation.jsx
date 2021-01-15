@@ -11,17 +11,17 @@ function QuestionPresentation({questionTitle, questionImg, children, endOfBranch
     } 
 
     return (
-        <div className='question-section'>
+        <section className='question-section'>
         {endOfBranch !== true ? 
-            <div>
+            <section>
                  <h4>{questionTitle}</h4>
             <div className='image-section'><img src={questionImg} alt='' ></img></div>
                 <ul>
                 {createListOfOptions}
                 </ul>
-            </div>
+            </section>
              : null}
-        </div>
+        </section>
     )
 }
 
