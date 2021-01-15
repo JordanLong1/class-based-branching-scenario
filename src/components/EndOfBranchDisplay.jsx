@@ -31,7 +31,7 @@ export const EndOfBranchDisplay = ({results}) => {
        } else if (mostFrequent === 'B') {
            learningStyle = 'Kinesthetic';
        } else if (mostFrequent === 'C') {
-           learningStyle = 'Hybrid, a combination of both visual and kinesthetic';
+           learningStyle = 'Hybrid (a combination of both visual and kinesthetic)';
        };
 
     

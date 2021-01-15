@@ -10,11 +10,11 @@ import React from 'react';
    
         render() {
             return (
-                <header className='landing-page-container'>
+                <section className='landing-page-container'>
                 <h1>Welcome to Jordan Long's Branching Scenario</h1>
                 <p>We are going to assess your learning style!</p>
                 <button onClick={this.handleClick}>Get Started</button>
-                </header>
+                </section>
             ); 
         }
 };
