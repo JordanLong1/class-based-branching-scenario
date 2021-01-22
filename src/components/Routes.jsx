@@ -4,7 +4,6 @@ import NavBar from './NavBar'
 
 import {BrowserRouter, Route} from 'react-router-dom';
 import LandingPage from './LandingPage';
-import { EndOfBranchDisplay } from './EndOfBranchDisplay';
 
 class Routes extends React.Component {
     render() {
@@ -14,7 +13,6 @@ class Routes extends React.Component {
            <BrowserRouter>
              <Route exact path='/' component={LandingPage} />
               <Route exact path='/displayquestion' component={QuestionLogic}/>
-              <Route exact path='/endbranch' component={EndOfBranchDisplay}/>
          </BrowserRouter>
          </div>
         );
