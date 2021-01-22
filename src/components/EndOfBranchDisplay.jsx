@@ -39,19 +39,19 @@ export const EndOfBranchDisplay = ({results}) => {
     return (
     <section className='ending-results-section'>
      <Confetti numberOfPieces={500} recycle={false}/>
-          <section className='ending-results-section-header-top'>
+          <div className='ending-results-section-header-top'>
              <h2>Congratulations!</h2>
-            </section>
-         <section className='ending-results-section-image-and-p-tags'>
+            </div>
+         <div className='ending-results-section-image-and-p-tags'>
             <img src={diffStyles} alt='Three different learning styles'></img>
                 <p>You have made it to the end of the session.</p>
                  <p>Your learning style results are available below.</p>
                     <p>These results are accumulated by which option you chose for each question.</p>
-        </section>
-        <section className='ending-results-section-learning-display'>
+        </div>
+        <div className='ending-results-section-learning-display'>
             <p>It looks like you have a {learningStyle} learning style!</p>
             <button onClick={() => history.push('/')}>Go back home</button>
-        </section>
+        </div>
     </section>
     )
 }
