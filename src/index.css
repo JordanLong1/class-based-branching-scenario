@@ -190,6 +190,13 @@ li:hover {
   }
 
 
+  .image-section img {
+    height: 100px;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0,0,0.5);
+    margin: 5%;
+ 
+  }
 
   .question-container {
     display: flex;
